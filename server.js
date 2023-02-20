@@ -33,7 +33,7 @@ try {
     rightDescription = rightGuess[0].description;
     rightGuessArray = Array.from(rightTerm);
     // res.send({ rightGuess })
-res.render('index.ejs', { rightGuess, rightTerm, rightDescription, rightGuessArray })
+res.render('index.ejs', { rightGuess, rightTerm, rightDescription, rightGuessArray });
 console.log(rightGuess);
 }    catch (error) {
        res.status(500).send({message: error.message});
