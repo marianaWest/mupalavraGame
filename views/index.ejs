@@ -18,17 +18,17 @@
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
 integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-
 </head>
 
 <body>
-    <h2>MUPALAVRA</h2>
+    <h2 id="test">MUPALAVRA</h2>
     <div id="game-board"></div>
-
-         <p><%= rightTerm %></p>
-            <p><%= rightGuessArray %></p>
-
-            <% const NUMBER_OF_GUESSES = 6 %>
+        <div style="display:none">
+          <p id="rightTerm"><%= rightTerm %></p>
+        </div>
+         
+                 
+            <!-- <% const NUMBER_OF_GUESSES = 6 %>
             <% let guessesRemaining = NUMBER_OF_GUESSES %> 
             <% let currentGuess = [] %>
             <% let nextLetter = 0 %>
@@ -46,10 +46,8 @@ integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7
                     </div>
                 <% } %>
            <% } %>
-           <% initBoard() %>
+           <% initBoard() %>   -->
 
-           
-                   
             <div id="keyboard-cont">
                 <div class="first-row">
                     <button class="keyboard-button">q</button>
@@ -89,7 +87,7 @@ integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7
 
            
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
-    
+    <script src="script.js" type="module"></script>
 
 </body>
 </html>

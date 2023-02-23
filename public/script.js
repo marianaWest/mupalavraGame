@@ -1,12 +1,7 @@
-const NUMBER_OF_GUESSES = 6
-let guessesRemaining = NUMBER_OF_GUESSES
-let currentGuess = []
-let nextLetter = 0
+let element = document.getElementById('rightTerm');
+let rightTerm = element.innerText;
+console.log(element);
+console.log(typeof element);
+console.log(rightTerm);
+console.log(typeof rightTerm);
 
-function initBoard(rightTerm) {
-    const test = document.createElement('p');
-    test.innerText = 'test';
-    document.body.appendChild(test);
-    
-}
-initBoard(rightTerm);
