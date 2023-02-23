@@ -28,12 +28,11 @@ app.get('/', async (req, res) => {
     let rightGuessArray;
 try {
     rightGuess = await MupaTerm.aggregate([{ $sample: { size: 1 } }]);
-    // rightTerm = rightGuess[0].term;
     rightTerm = rightGuess[0].term.normalize('NFD').replace(/[\u0300-\u036f]/g, "");
     rightDescription = rightGuess[0].description;
-    rightGuessArray = Array.from(rightTerm);
-    // res.send({ rightGuess })
-res.render('index.ejs', { rightGuess, rightTerm, rightDescription, rightGuessArray });
+    // won't need this
+    // rightGuessArray = Array.from(rightTerm);
+res.render('index.ejs', { rightGuess, rightTerm, rightDescription });
 console.log(rightGuess);
 }    catch (error) {
        res.status(500).send({message: error.message});
