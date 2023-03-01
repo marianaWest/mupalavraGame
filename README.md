@@ -1,21 +1,24 @@
-# myCellar
+# Mupalavra 
 
-[PLACE_FOR_YOUR_IMAGE]
+[PLACE_FOR_IMAGE]
 
 [PLACE_TO_ADD_LINK_FOR_DEPLOYED_VERSION]
 
 *** This is a work in progress ***
 
-My Cellar is a web application created to a wine collector who wants to know what he has in stock. It allows him to enter the name of the wine, winery, vintage, type of wine, and number of bottles. 
-  
-# Technologies in use / Tech Stack / Built with
-  - Bootstrap
-  - Node.js
-  - Express
+Mupalavra is a web application being created for the Museu Paranaense, one of Brazil's oldest museums. It's based on the Wordle game, but rather than randomly choosing from a pre-generated list of words, it picks the right guess from a MongoDB database fed by the museum's researchers and curators. When the user guesses the right word, the game also shows a brief description of it.  
+The name is a combination of the museum's acronym (MUPA) and 'palavra', which means 'word' in Portuguese.  
+
+# Technologies in use / Tech Stack / Built with  
+  - JavaScript  
+  - Node.js  
+  - Express  
+  - MongoDB  
+  - Toastr, an animation library  
 
 # Installation
 
-To install My Cellar locally, please follow the steps below:
+To install Mupalavra locally, please follow the steps below:
   - Clone repo to your machine
   - Open the root of the project and install all dependencies with `npm i` / `yarn`
   - Project has various scripts to run:
@@ -23,13 +26,13 @@ To install My Cellar locally, please follow the steps below:
 
 # What I have learned
 
-While I was building My Cellar I have learned the fundamentals of MVC architecture, and how to create a database on MongoDB. 
+While I was building Mupalavra I have learned the fundamentals of MVC architecture, and how to transfer data sent from the backend into a plain JavaScript file. I also learned about .normalize('NFD') and how to get random information from MongoDB.  
 
 # Source
 
-This project began as a todo-app created as part of the 100DDevs course curriculum (by MayanWolfe), but I have implemented numerous features and changes. 
+This project began as a clone of the FreeCodeCamp Wordle tutorial (https://www.freecodecamp.org/news/build-a-wordle-clone-in-javascript/), but I have implemented numerous features and changes, not limited to the connection with the backend. For example, originally the Wordle game only accepts five-letter words, and Mupalavra accepts words of different lengths.  
 
 # Refactoring
 
-I'm not pleased with the layout yet, I know it's not working on all screen sizes. The styling in general needs improving. I might use React or Tailwind in the future, but for now the most important thing is that it works. 
+I'm not pleased with the layout yet, especially because the colors don't have the right contrast for reading.  
 
