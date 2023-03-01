@@ -30,8 +30,7 @@ try {
     rightGuess = await MupaTerm.aggregate([{ $sample: { size: 1 } }]);
     rightTerm = rightGuess[0].term.normalize('NFD').replace(/[\u0300-\u036f]/g, "");
     rightDescription = rightGuess[0].description;
-    // won't need this
-    // rightGuessArray = Array.from(rightTerm);
+   
 res.render('index.ejs', { rightGuess, rightTerm, rightDescription });
 console.log(rightGuess);
 }    catch (error) {

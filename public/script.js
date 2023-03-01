@@ -5,8 +5,11 @@ let rightTerm = element.innerText;
 console.log(rightTerm);
 
 let rightTermLower = rightTerm.toLowerCase();
-
 let rightGuessArray = Array.from(rightTermLower);
+
+let elementDescription = document.getElementById("rightDescription");
+let rightDescription = elementDescription.innerText;
+console.log(rightDescription);
 
 const NUMBER_OF_GUESSES = 6;
 let guessesRemaining = NUMBER_OF_GUESSES;
@@ -94,8 +97,10 @@ function checkGuess() {
     }, delay);
   }
   if (guessString === rightTermLower) {
-    toastr.success("Parabéns, você acertou!");
-    // alert("parabéns");
+    toastr.success(
+      `Parabéns, você acertou! 
+      ${rightTerm} é ${rightDescription}`
+    );
     guessesRemaining = 0;
     return;
   } else {
