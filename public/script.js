@@ -1,4 +1,3 @@
-// falta toastr
 
 let element = document.getElementById("rightTerm");
 let rightTerm = element.innerText;
