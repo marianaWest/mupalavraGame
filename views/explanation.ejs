@@ -1,25 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mupalavra</title>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Lobster&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-</head>
+<%- include('partials/header') -%>
+
 <body>
     <h2>MUPALAVRA</h2>
-    <p>Adivinhe a palavra</p>
+    <div class="explanation">   
+    <p>Descubra a palavra oculta.</p>
     <p>A palavra está relacionada com a coleção do Museu Paranaense.</p>
-    <p>O fundo verde escuro significa que existe na palavra oculta, no lugar certo.</p>
-    <p>O fundo amarelo significa que a letra existe na palavra oculta, mas não está no lugar certo.</p>
-    <p>O fundo cinzento significa que a letra não existe na palavra oculta.</p>
-
+    <p>O fundo <span class="rightLetter">verde escuro</span> significa que a letra existe na palavra oculta e está no lugar certo.</p>
+    <p>O fundo <span class="wrongPlace">amarelo</span> significa que a letra existe na palavra oculta, mas em outro lugar.</p>
+    <p>O fundo <span class="wrongLetter">cinzento</span> significa que a letra não existe na palavra oculta.</p>
+    
+</div>
+<div class="explanationLink">
     <a href="/game">Vamos jogar!</a>
+</div>
+
     </body>
 </html>

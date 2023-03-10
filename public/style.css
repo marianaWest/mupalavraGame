@@ -1,86 +1,148 @@
 :root {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    --box: rgba(4, 53, 32, 0.3);
-    --button: rgba(0, 0, 0, 0.8);
-    --term-list-item: rgba(4, 53, 32, 0.3);
-    --primary-text: rgba(4, 53, 32, 0.8);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --box: rgba(4, 53, 32, 0.3);
+  --button: rgba(0, 0, 0, 0.8);
+  --term-list-item: rgba(4, 53, 32, 0.3);
+  --primary-text: rgba(4, 53, 32, 0.8);
 }
 
 body {
-    background: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 h2 {
-    padding: 10px;
-    font-family: 'Righteous', 'Candara';
-    font-size: 3rem;
-    color: var(--primary-text);
-    text-align: center;
+  margin-top: 2rem;
+  padding: 10px;
+  font-family: "Righteous", "Candara";
+  font-size: 3rem;
+  color: var(--primary-text);
+  text-align: center;
 }
 
 h3 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: white;
 }
 
 #game-board {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .letter-box {
-    border: 2px solid rgb(117, 158, 140);
-    font-family: Helvetica, Arial, sans-serif;
-    color: rgba(4, 53, 32, 0.9);
-    border-radius: 3px;
-    margin: 2px;
-    font-size: 2.5rem;
-    font-weight: 700;
-    height: 3rem;
-    width: 3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-transform: uppercase;
-  }
+  border: 2px solid rgb(117, 158, 140);
+  font-family: Helvetica, Arial, sans-serif;
+  color: rgba(4, 53, 32, 0.9);
+  border-radius: 3px;
+  margin: 2px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
 
-  .filled-box {
-    border: 2px solid rgba(4, 53, 32, 0.8);
-  }
+.filled-box {
+  border: 2px solid rgba(4, 53, 32, 0.8);
+}
 
-  .letter-row {
-    display: flex;
-  }
+.letter-row {
+  display: flex;
+}
 
-  #keyboard-cont {
-    margin: 1rem 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  #keyboard-cont div {
-    display: flex;
-  }
-  
-  .second-row {
-    margin: 0.5rem 0;
-  }
-  
-  .keyboard-button {
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 1rem;
-    font-weight: 700;
-    padding: 0.5rem;
-    margin: 0 2px;
-    cursor: pointer;
-    text-transform: uppercase;
-    background-color: white;
-    border: 2px solid rgba(0, 115, 67, 0.8);
-    color:rgb(4, 53, 32);
-    border-radius: 5px;
-  }
+#keyboard-cont {
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#keyboard-cont div {
+  display: flex;
+}
+
+.second-row {
+  margin: 0.5rem 0;
+}
+
+.keyboard-button {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.5rem;
+  margin: 0 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: white;
+  border: 2px solid rgba(0, 115, 67, 0.8);
+  color: rgb(4, 53, 32);
+  border-radius: 5px;
+}
+
+.explanation {
+  width: 50vw;
+  margin: 3rem auto;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.explanation p {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.4rem;
+}
+
+.explanationLink {
+  width: 50vw;
+  margin: 1rem auto;
+  text-align: right;
+}
+
+.explanationLink a {
+  color: rgba(4, 53, 32, 0.9);
+  text-decoration: none;
+  font-family: "Righteous", "Candara", Helvetica, Arial, sans-serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+  border: 2px solid rgba(4, 53, 32, 0.9);
+  padding: 5px 12px;
+  border-radius: 5px;
+  background-color: rgba(0, 128, 0, 0.3);
+}
+
+.explanation .rightLetter {
+  padding: 0 4px;
+  background-color: green;
+  border-radius: 3px;
+  color: white;
+  border: 2px solid rgba(4, 53, 32, 0.9);
+  font-weight: bold;
+}
+
+.explanation .wrongPlace {
+  padding: 0 4px;
+  background-color: yellow;
+  border-radius: 3px;
+  color: rgba(4, 53, 32, 0.9);
+  border: 2px solid rgba(4, 53, 32, 0.9);
+  font-weight: bold;
+}
+
+.explanation .wrongLetter {
+  padding: 0 4px;
+  background-color: rgba(117, 158, 140, 0.5);
+  border-radius: 3px;
+  color: rgba(4, 53, 32, 0.9);
+  border: 2px solid rgba(4, 53, 32, 0.9);
+  font-weight: bold;
+}
