@@ -1,4 +1,3 @@
-
 let element = document.getElementById("rightTerm");
 let rightTerm = element.innerText;
 console.log(rightTerm);
@@ -80,7 +79,7 @@ function checkGuess() {
 
     if (letterPosition === -1) {
       letterColor = "rgba(117, 158, 140, .5)";
-    } else {
+          } else {
       if (currentGuess[i] === rightGuessArray[i]) {
         letterColor = "green";
       } else {
