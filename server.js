@@ -24,24 +24,24 @@ app.get("/", async (req, res) => {
   res.render("explanation.ejs");
 });
 
-// app.get("/", async (req, res) => {
-//   let rightGuess;
-//   let rightTerm;
-//   let rightDescription;
-//   let rightGuessArray;
-//   try {
-//     rightGuess = await MupaTerm.aggregate([{ $sample: { size: 1 } }]);
-//     rightTerm = rightGuess[0].term
-//       .normalize("NFD")
-//       .replace(/[\u0300-\u036f]/g, "");
-//     rightDescription = rightGuess[0].description;
+app.get("/game", async (req, res) => {
+  let rightGuess;
+  let rightTerm;
+  let rightDescription;
+  let rightGuessArray;
+  try {
+    rightGuess = await MupaTerm.aggregate([{ $sample: { size: 1 } }]);
+    rightTerm = rightGuess[0].term
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "");
+    rightDescription = rightGuess[0].description;
 
-//     res.render("index.ejs", { rightGuess, rightTerm, rightDescription });
-//     console.log(rightGuess);
-//   } catch (error) {
-//     res.status(500).send({ message: error.message });
-//   }
-// });
+    res.render("index.ejs", { rightGuess, rightTerm, rightDescription });
+    console.log(rightGuess);
+  } catch (error) {
+    res.status(500).send({ message: error.message });
+  }
+});
 
 //NOT NEEDED HERE
 // app.route("/addTerm").get((req, res) => {
