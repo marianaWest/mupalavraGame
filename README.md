@@ -1,6 +1,6 @@
 # Mupalavra 
 
-[PLACE_FOR_IMAGE]
+![mupalavra](https://user-images.githubusercontent.com/97693233/232497764-4270de9e-34f7-4473-9383-732ffc060be6.gif)
 
 https://mupalavra.cyclic.app/game
 
