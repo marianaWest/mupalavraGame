@@ -2,9 +2,8 @@
 
 [PLACE_FOR_IMAGE]
 
-[PLACE_TO_ADD_LINK_FOR_DEPLOYED_VERSION]
+https://mupalavra.cyclic.app/game
 
-*** This is a work in progress ***
 
 Mupalavra is a web application being created for the Museu Paranaense, one of Brazil's oldest museums. It's based on the Wordle game, but rather than randomly choosing from a pre-generated list of words, it picks the right guess from a MongoDB database fed by the museum's researchers and curators. When the user guesses the right word, the game also shows a brief description of it.  
 The name is a combination of the museum's acronym (MUPA) and 'palavra', which means 'word' in Portuguese.  
